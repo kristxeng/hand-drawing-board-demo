@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  padding: 0 1rem;
+}
+
+#canvas, #svg-result {
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #999;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.3rem 1rem;
+}
