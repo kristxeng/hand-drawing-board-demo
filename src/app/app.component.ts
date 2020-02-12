@@ -20,15 +20,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.canvas = new fabric.Canvas('canvas', { isDrawingMode: true });
-
-    // const rect = new fabric.Rect({
-    //   top : 100,
-    //   left : 100,
-    //   width : 60,
-    //   height : 70,
-    //   fill : 'red'
-    // });
-    // canvas.add(rect);
+    // this.canvas.freeDrawingBrush.width = 3;
   }
 
   clear() {
@@ -50,5 +42,9 @@ export class AppComponent implements AfterViewInit {
     const url = URL.createObjectURL(blob);
 
     return url;
+  }
+
+  onLineWidthChange(lineWidth: string) {
+    this.canvas.freeDrawingBrush.width = parseInt(lineWidth, 10);
   }
 }
